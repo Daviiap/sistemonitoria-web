@@ -1,10 +1,34 @@
 const inputMatrculaEl = document.getElementById('matricula')
 const form = document.getElementById('form')
 const inputNomeEl = document.getElementById('nome')
-const inputTelefoneEl = document.getElementById('telefone')
+const inputTelefoneEl = document.getElementById('contact')
 const inputDescriptionEl = document.getElementById('description')
 const imageInputEl = document.getElementById('image')
 const submitButtonEl = document.getElementById('submit-button')
+const telCheckBox = document.getElementById('check-phone-number')
+const emailCheckBox = document.getElementById('check-email')
+
+function onlyOne(checkbox) {
+  var checkboxes = document.getElementsByName('check')
+  checkboxes.forEach((item) => {
+    if (item !== checkbox)
+      item.checked = false
+    else
+      item.checked = true
+  })
+
+  if(checkbox.id == 'check-phone-number'){
+    inputTelefoneEl.setAttribute('placeholder', 'Telefone')
+    inputTelefoneEl.setAttribute('type', 'number')
+  } else {
+    inputTelefoneEl.setAttribute('placeholder', 'E-mail')
+    inputTelefoneEl.setAttribute('type', 'email')
+  }
+
+}
+
+telCheckBox.onclick = () => onlyOne(telCheckBox)
+emailCheckBox.onclick = () => onlyOne(emailCheckBox)
 
 const requester = new XMLHttpRequest()
 

@@ -11,26 +11,66 @@
     <div id="container">
       <h1>Formulário para Monitoria</h1>
       <form action="submit" method="post" id="form">
-        <input
-          type="number"
-          name="matricula"
-          id="matricula"
-          placeholder="Matrícula"
-        />
-        <input type="text" id="nome" placeholder="Nome" />
-        <input type="text" id="telefone" placeholder="Telefone ou E-mail" />
-        <textarea
-          name="description"
-          id="description"
-          cols="30"
-          rows="10"
-          placeholder="Insira uma breve descrição da dúvida, e se necessário, adicione uma imagem da questão"
-        ></textarea>
-        <input type="file" name="image" id="image" />
+        <div id="registration-input">
+          <label for="matricula">Matrícula</label>
+          <input
+            type="number"
+            name="matricula"
+            id="matricula"
+            placeholder="Matrícula"
+          />
+        </div>
+
+        <div id="name-input">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome" />
+        </div>
+
+        <div id="contact-input">
+          <label for="telefone">Contato</label>
+          <div id="checkbox-box">
+            <label>
+              <input
+                type="checkbox"
+                name="check"
+                id="check-phone-number"
+                checked
+              />Telefone
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="check"
+                id="check-email"
+              />E-mail
+            </label>
+          </div>
+          <input
+            name="contact"
+            type="number"
+            id="contact"
+            placeholder="Telefone"
+          />
+        </div>
+
+        <div id="description-input">
+          <label for="description">Descrição</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Insira uma breve descrição da dúvida, e se necessário, adicione uma imagem da questão"
+          ></textarea>
+        </div>
+
+        <div id="file-input">
+          <label for="image">Imagem</label>
+          <input type="file" name="image" id="image" />
+        </div>
+
         <button id="submit-button">Enviar</button>
       </form>
-
-      <canvas><img src="" alt=""></canvas>
     </div>
   </body>
 
