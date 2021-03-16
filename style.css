@@ -1,0 +1,97 @@
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+#checkbox-box label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#checkbox-box input {
+  border: none;
+  box-shadow: none;
+
+}
+
+#checkbox-box input:hover {
+  cursor: pointer;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.input-div label {
+  margin-bottom: 5px;
+  font-size: medium;
+}
+.input-div input {
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(89, 95, 81, 0.2);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.input-div textarea {
+  border: none;
+  height: 150px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(89, 95, 81, 0.2);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+#image-input {
+  box-shadow: none;
+}
+
+.check {
+  box-shadow: none;
+}
+
+form button{
+  width: 50%;
+  margin-top: 10px;
+  align-self: center;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: rgba(30, 255, 0, 0.35);
+  box-shadow: 2px 2px 2px 1px rgba(89, 95, 81, 0.2);
+}
+
+form button:hover{
+  transition: 0.1s;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 255, 221, 0.7);
+  cursor: pointer;
+}

@@ -11,7 +11,7 @@
     <div id="container">
       <h1>Formulário para Monitoria</h1>
       <form action="submit" method="post" id="form">
-        <div id="registration-input">
+        <div class="input-div" id="registration-input">
           <label for="matricula">Matrícula</label>
           <input
             type="number"
@@ -21,28 +21,27 @@
           />
         </div>
 
-        <div id="name-input">
+        <div class="input-div" id="name-input">
           <label for="nome">Nome</label>
           <input type="text" id="nome" placeholder="Nome" />
         </div>
 
-        <div id="contact-input">
+        <div class="input-div" id="contact-input">
           <label for="telefone">Contato</label>
           <div id="checkbox-box">
             <label>
               <input
-                type="checkbox"
+                type="radio"
                 name="check"
                 id="check-phone-number"
+                class="check"
                 checked
-              />Telefone
+              />
+              Telefone
             </label>
             <label>
-              <input
-                type="checkbox"
-                name="check"
-                id="check-email"
-              />E-mail
+              <input class="check" type="radio" name="check" id="check-email" />
+              E-mail
             </label>
           </div>
           <input
@@ -53,20 +52,20 @@
           />
         </div>
 
-        <div id="description-input">
+        <div class="input-div" id="description-input">
           <label for="description">Descrição</label>
           <textarea
             name="description"
             id="description"
             cols="30"
             rows="10"
-            placeholder="Insira uma breve descrição da dúvida, e se necessário, adicione uma imagem da questão"
+            placeholder="Insira uma breve descrição da dúvida, e se necessário, adicione uma imagem"
           ></textarea>
         </div>
 
-        <div id="file-input">
+        <div class="input-div" id="file-input">
           <label for="image">Imagem</label>
-          <input type="file" name="image" id="image" />
+          <input type="file" name="image" id="image-input" />
         </div>
 
         <button id="submit-button">Enviar</button>
