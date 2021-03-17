@@ -55,9 +55,9 @@ submitButtonEl.addEventListener('click', (event) => {
         || (weekDay === 3 && today.getHours() < 14)
         || (weekDay === 5 && today.getHours() >= 16)
         || weekDay === 6) {
-        window.alert(`Formulário enviado com sucesso!\nVocê será respondido na próxima quarta-feira`)
+        window.alert(`Formulário enviado com sucesso!\nVocê será respondido na próxima quarta-feira,\nentre 14h e 16h`)
       } else {
-        window.alert(`Formulário enviado com sucesso!\nVocê será respondido na próxima sexta-feira!`)
+        window.alert(`Formulário enviado com sucesso!\nVocê será respondido na próxima sexta-feira,\nentre 16h e 18h`)
       }
     }
   }
