@@ -92,6 +92,6 @@ form button:hover{
   transition: 0.1s;
   font-weight: bold;
   font-size: 18px;
-  background-color: rgba(0, 255, 221, 0.7);
+  background-color: rgba(30, 255, 0, 0.5);
   cursor: pointer;
 }
