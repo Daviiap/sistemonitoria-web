@@ -41,7 +41,7 @@ submitButtonEl.addEventListener('click', (event) => {
   const description = inputDescriptionEl.value
   const image = imageInputEl.files[0]
 
-  requester.open("POST", "https://api-monitoria-fmccii.herokuapp.com//submit", true);
+  requester.open("POST", "https://api-monitoria-fmccii.herokuapp.com/submit", true);
 
   requester.setRequestHeader("Content-Type", "application/json");
 
